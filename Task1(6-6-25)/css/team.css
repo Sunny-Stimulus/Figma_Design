@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'AtlanticCondensed';
+    src: url('../fonts/Atlantic\ VF/AtlanticCondensed-Black.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia',
+    /* font-family: 'Georgia', */
 }
 
 .container {
@@ -60,10 +67,14 @@ body {
     flex-wrap: nowrap;
 }
 
-.logo-apm {
-    font-size: 28px;
-    font-weight: 900;
-    color: #fff;
+.logo-apm img {
+    margin: auto;
+    width: 160px;
+    height: auto;
+    display: block;
+    /* font-size: 22px; */
+    /* font-weight: 900;
+    color: #fff; */
 }
 
 .logo-text {
@@ -128,7 +139,7 @@ body {
     font-size: 46px;
     font-weight: 800;
     color: #000;
-    font-family: 'Atlantic Condensed', serif;
+    font-family: 'AtlanticCondensed', serif;
     line-height: 1.2;
     margin: 0;
     max-width: 100%;
@@ -176,6 +187,7 @@ body {
     height: 280px;
     object-fit: cover;
 }
+
 /* 
 .team-info {
     display: flex;
@@ -348,10 +360,13 @@ body {
     margin-bottom: 10px;
 }
 
-.logo-apm1 {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: -1px;
+.logo-apm1 img {
+    /* font-size: 20px; */
+    /* font-weight: 400; */
+    /* margin: auto; */
+    width: 160px;
+    height: auto;
+    display: block;
     color: #000;
 }
 

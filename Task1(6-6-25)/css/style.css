@@ -1,8 +1,15 @@
+@font-face {
+    font-family: 'AtlanticCondensed';
+    src: url('../fonts/Atlantic\ VF/AtlanticCondensed-Black.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Reset and Base */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia',
+    /* font-family: 'Georgia', */
 }
 
 /* Common styles */
@@ -43,10 +50,14 @@ section {
     flex-wrap: nowrap;
 }
 
-.logo-apm {
-    font-size: 28px;
-    font-weight: 900;
-    color: #fff;
+.logo-apm img {
+    margin: auto;
+    width: 160px;
+    height: auto;
+    display: block;
+    /* font-size: 22px; */
+    /* font-weight: 900;
+    color: #fff; */
 }
 
 .logo-text {
@@ -108,10 +119,10 @@ section {
 /* Left Column (5.5 columns) */
 .hero-title {
     grid-column: 1 / span 6;
-    font-size: 46px;
-    font-weight: 800;
+    font-size: 54px;
+    font-weight: 900;
     color: #000;
-    font-family: 'Atlantic Condensed', serif;
+    font-family: 'AtlanticCondensed', serif;
     line-height: 1.2;
     margin: 0;
     max-width: 100%;
@@ -152,8 +163,8 @@ section {
 }
 
 .mission-title {
-    font-size: 28px;
-    font-family: 'Atlantic Condensed', serif;
+    font-size: 34px;
+    font-family: 'AtlanticCondensed', serif;
     font-weight: bold;
     position: relative;
     display: inline-block;
@@ -200,9 +211,9 @@ section {
 }
 
 .tailored-text h3 {
-    font-family: 'Atlantic Condensed', serif;
+    font-family: 'AtlanticCondensed', serif;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 20px;
     line-height: 1.4;
 }
@@ -260,9 +271,9 @@ section {
 }
 
 .art-text h3 {
-    font-family: 'Atlantic Condensed', serif;
+    font-family: 'AtlanticCondensed', serif;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 20px;
     line-height: 1.4;
 }
@@ -308,10 +319,13 @@ section {
     margin-bottom: 10px;
 }
 
-.logo-apm1 {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: -1px;
+.logo-apm1 img {
+    /* font-size: 20px; */
+    /* font-weight: 400; */
+    /* margin: auto; */
+    width: 160px;
+    height: auto;
+    display: block;
     color: #000;
 }
 
