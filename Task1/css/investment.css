@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'AtlanticCondensed';
+    src: url('../fonts/Atlantic\ VF/AtlanticCondensed-Black.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Reset and Base */
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Georgia', */
+}
+
+/* Common styles */
+section {
+    padding: 80px 40px;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Container */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    max-width: 1400px;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+.navbar-custom {
+    background-color: #000;
+    border-radius: 60px;
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.logo-apm img {
+    margin: auto;
+    width: 160px;
+    height: auto;
+    display: block;
+    /* font-size: 22px; */
+    /* font-weight: 900;
+    color: #fff; */
+}
+
+.logo-text {
+    font-size: 12px;
+    line-height: 1.2;
+    color: white;
+    margin-left: 8px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.contact-btn {
+    background-color: #eee;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 22px;
+}
+
+/* Investment-section */
+.investment-section {
+    margin-top: 40px;
+    padding: 100px 0 60px;
+    /* background-color: #fff; */
+}
+
+.investment-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-family: 'AtlanticCondensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+.investment-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 25px;
+    max-width: 90%;
+}
+
+.investment-image {
+    width: 100%;
+    /* max-width: 1540px; */
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin: 10px;
+}
+
+/* investment-process part */
+.investment-process {
+    background-color: #F4F2ED;
+    padding: 80px 40px;
+    margin: 60px;
+    border-radius: 15px;
+}
+
+.investment-process .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    font-family: 'AtlanticCondensed', sans-serif;
+    color: #111;
+}
+
+/* .process-steps-wrapper {
+    position: relative;
+    padding-left: 80px;
+} */
+
+.process-step::before {
+    content: "";
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #000;
+    z-index: 0;
+}
+
+.process-step {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    position: relative;
+    /* padding-left: 30px; */
+}
+
+
+.step-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: #999;
+    flex-shrink: 0;
+    width: 60px;
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.step-line {
+    width: 1px;
+    background-color: #000;
+    margin: 0 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.step-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.step-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.step-content li {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 
+.investment-section1 {
+    margin-top: 40px;
+    padding: 100px 0 60px;
+    background-color: #F4F2ED;
+}
+
+.investment-section1 .container {
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.process-step {
+    margin-bottom: 40px;
+}
+
+.step-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.step-desc {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.step-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.step-list li {
+    font-size: 14px;
+    margin-bottom: 6px;
+} */
+
+/* footer-section */
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.logo-text1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.logo-apm1 img {
+    /* font-size: 20px; */
+    /* font-weight: 400; */
+    /* margin: auto; */
+    width: 160px;
+    height: auto;
+    display: block;
+    color: #000;
+}
+
+.logo-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2px;
+    line-height: 1.3;
+    color: #000;
+}
+
+.skyline-img {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    grid-column: span 3;
+}
+
+.footer-column {
+    grid-column: span 2;
+}
+
+.footer-column h4 {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact .icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.contact .icons i {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact .icons i:hover {
+    color: #0073ff;
+}
+
+.copyright {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive-design */
+/* Navbar */
+@media (max-width: 768px) {
+    .navbar-custom {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 16px 20px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 20px;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .contact-btn {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* Navigation Menu Wrapper */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 20px;
+        gap: 20px;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 16px;
+        margin: 0;
+    }
+
+    .contact-btn {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+}
+
+/* Responsive Investment Process Section */
+@media (max-width: 768px) {
+  /* .process-steps-wrapper {
+    padding-left: 0;
+  }
+
+  .process-steps-wrapper::before {
+    display: none;
+  } */
+
+  .process-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-number {
+    width: auto;
+    text-align: left;
+    padding-right: 0;
+    /* margin-bottom: 8px; */
+  }
+
+  .step-content h3 {
+    font-size: 18px;
+  }
+
+  .step-content p,
+  .step-content li {
+    font-size: 14px;
+  }
+}
+
+/* Responsive-footer */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-column,
+    .contact {
+        grid-column: auto;
+        margin-bottom: 20px;
+    }
+
+    .logo-text1 {
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .skyline-img {
+        margin: 10px auto 0;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 8px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 6px;
+    }
+
+    .contact .icons {
+        justify-content: center;
+    }
+}
